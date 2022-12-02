@@ -1,0 +1,138 @@
+#footer {
+  margin-top: 90px;
+  background-color: #244D4D;
+  padding-top: 130px;
+  padding-bottom: 95px;
+}
+
+.footer_head h2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.footer_head_btn a {
+  padding: 18px 36px;
+  background: #3A5F5F;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 19px;
+  color: #FCFBFF;
+  margin: 0 10px;
+  text-transform: capitalize;
+  font-family: 'Google Sans', sans-serif;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.footer_head_btn a:hover {
+  color: #244D4D;
+}
+
+.footer_head_btn a::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color:#FCFBFF ;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+
+.footer_head_btn a:hover::after{
+  height: 180px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+
+.main_footer {
+  margin-top: 60px;
+  border-top: 1px solid #ffffff30;
+  padding-top: 88px;
+}
+
+.footer_one p {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #EEEEEE;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.footer_one .footer_social {
+  padding-top: 21px;
+}
+
+.footer_social i {
+  color: white;
+  font-size: 20px;
+  margin-right: 17px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_social i:hover {
+  color: goldenrod;
+  transform: scale(1.1) translateY(-5px);
+  -webkit-transform: scale(1.1) translateY(-5px);
+  -moz-transform: scale(1.1) translateY(-5px);
+  -ms-transform: scale(1.1) translateY(-5px);
+  -o-transform: scale(1.1) translateY(-5px);
+}
+
+.footer_list h2 {
+  font-weight: 500;
+  font-size: 17px;
+  font-family: 'Google Sans', sans-serif;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.footer_list ul li a {
+  padding-bottom: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #EEEEEE;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_list ul li a:hover {
+  color: goldenrod;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}

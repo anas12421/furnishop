@@ -1,0 +1,99 @@
+#banner {
+  position: relative;
+}
+
+.banner_txet {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 50;
+}
+
+.b_texts {
+  // background-color: red;
+  padding: 62px 46px 75px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(25px);
+  position: relative;
+}
+
+.b_texts img {
+  position: absolute;
+  top: 0;
+  left: 19%;
+  transform: translateY(-57%);
+  -webkit-transform: translateY(-57%);
+  -moz-transform: translateY(-57%);
+  -ms-transform: translateY(-57%);
+  -o-transform: translateY(-57%);
+}
+
+.b_texts h1 {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  letter-spacing: -0.03em;
+  color: #244D4D;
+}
+
+.b_texts p {
+  padding-top: 5px;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #5F5F64;
+}
+
+.bn_n {
+  position: absolute;
+  right: -45px;
+  top: 30%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bn_p {
+  position: absolute;
+  right: -45px;
+  top: 38%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.banner_number {
+  position: absolute;
+  bottom: 25%;
+  right: 13.5%;
+}
+
+.banner_number p {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: #242424;
+
+}
+.toptobottom_btn {
+  position: absolute;
+  bottom: -5%;
+  right: 15%;
+}
+
+.toptobottom_btn a i {
+  height: 124px;
+  width: 124px;
+  background: rgba(255, 255, 255, 0.4);
+  // background-color: red;
+  backdrop-filter: blur(25px);
+  color: white;
+  text-align: center;
+  line-height: 124px;
+  font-size: 35px;
+}

@@ -1,0 +1,39 @@
+
+
+.backtotop i {
+  height: 40px;
+  width: 40px;
+  background-color: #244D4D;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  animation: btt 0.8s linear infinite;
+  -webkit-animation: btt 0.8s linear infinite;
+  display: none;
+  z-index: 998;
+}
+
+@keyframes btt {
+  0% {
+    bottom: 40px;
+  }
+  25% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}

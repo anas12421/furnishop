@@ -1,0 +1,129 @@
+.menu {
+  // background-color: chocolate;
+  padding: 15px 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.menu_ex{
+  background-color: #244D4D;
+  animation: menu_ex 1s;
+  -webkit-animation: menu_ex 1s;
+}
+
+@keyframes menu_ex {
+  0%{
+    top: -50px;
+  }
+  100%{
+    top: 0;
+  }
+  
+}
+
+.menu_ex path{
+  fill: white;
+}
+
+
+
+
+
+.menu ul li a {
+  padding: 0 !important;
+  margin: 0 35px !important;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #242424 !important;
+}
+
+.menu ul li a:hover{
+  color: #244D4D !important;
+}
+.menu ul li a.active{
+  color: #244D4D !important;
+}
+.menu_ex ul li a{
+  color: white !important;
+}
+.menu_ex ul li a:hover{
+  color: black !important;
+}
+.menu_ex ul li a.active{
+  color: black !important;
+}
+
+
+.menu .icon button {
+  background-color: transparent !important;
+  border: none;
+  padding: 0 !important;
+  margin-right: 40px !important;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.menu .icon i {
+  color: black !important;
+  font-size: 20px;
+}
+
+.menu_ex .icon i{
+  color: white !important;
+}
+
+
+.search_modal h5{
+  text-align: center !important;
+  color: #244D4D;
+  text-transform: capitalize;
+}
+
+.search_modal input{
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  text-transform: capitalize;
+  font-family: 'Manrope', sans-serif;
+}
+
+
+.search_modal button{
+  background-color: #244D4D;
+}
+
+
+.btn-secondary:hover {
+  background-color: #244D4D;
+  border-color: transparent;
+}
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+  background-color: #244D4D !important;
+  border-color: transparent;
+}
+
+.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow:none;
+}
+
+
+.modal{
+  z-index: 99999;
+}

@@ -1,0 +1,133 @@
+#product {
+  padding-top: 100px;
+}
+
+.product_head h2 {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0.01em;
+  color: #244D4D;
+  font-family: 'Noto Serif JP', sans-serif;
+  text-transform: capitalize;
+
+}
+
+.product_head_btn a {
+  font-weight: 400;
+  font-size: 17px;
+  color: #3D3D3F;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product_head_btn a i {
+  margin-left: 16px;
+}
+
+.product_item_btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 38px;
+  padding-bottom: 120px;
+}
+
+.product_item_btn ul li button {
+  background-color: transparent !important;
+  font-weight: 400;
+  font-size: 18px;
+  color: #A9A7A6 !important;
+  text-transform: capitalize;
+  font-family: 'Google Sans', sans-serif;
+  padding: 0 28px !important;
+}
+
+.product_item_btn ul li button.active {
+  color: #3D3D3F !important;
+}
+
+.product_item {
+  position: relative;
+  // background-color: yellow;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.product_item::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 305px;
+  top: 0;
+  left: 0;
+  background: #244D4D;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.product_item i{
+  position: absolute;
+  right: 5%;
+  top: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  height: 32px;
+  width: 32px;
+  color: white;
+  background: #D6C4B8;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product_item i:hover{
+  background-color: #244D4D;
+}
+
+
+.product_item_text {
+  padding: 43px 0 0 51px;
+}
+
+.product_item_text h2 {
+  font-weight: 400;
+  font-size: 26px;
+  color: #3D3D3F;
+  text-transform: capitalize;
+  font-family: 'Google Sans', sans-serif;
+  padding-bottom: 12px;
+}
+
+.product_item_text span {
+  font-weight: 400;
+  font-size: 19px;
+  color: #3D3D3F;
+  font-family: 'Google Sans', sans-serif;
+  color: #3D3D3F;
+}
+
+.product_item_text del {
+  font-weight: 400;
+  font-size: 15px;
+  // text-decoration-line: line-through;
+  color: #A9A7A6;
+  font-family: 'Google Sans', sans-serif;
+  padding-left: 25px;
+}
+
+.product_item_img {
+  text-align: center;
+  padding-top: 55px;
+}

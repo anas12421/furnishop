@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>furni.shop</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".menu">
+
+  <!-- backtotop button start -->
+  <div class="backtotop">
+    <i class="fa-solid fa-angle-up"></i>
+  </div>
+  <!-- backtotop button end -->
+
+  <!-- navbar part start -->
+  <nav class="navbar navbar-expand-lg navbar-light p-0 menu">
+    <div class="container">
+      <a class="navbar-brand m-0" href="#">
+        <!-- <img src="images/logo.png" class="w-100 img-fluid" alt="logo"> -->
+
+        <svg width="132" height="29" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.78 8.324V9.182H2.99V15.89C2.99 17.606 2.964 19.296 2.912 20.96L0.91 21.194V22H8.918V21.194L6.448 20.908C6.422 19.244 6.396 17.58 6.396 15.89V9.182H9.958V8.09H6.37C6.266 5.126 6.552 3.358 7.358 2.162C7.54 1.85 7.826 1.59 8.164 1.408L8.71 2.136C9.412 3.28 10.114 3.696 10.998 3.696C12.09 3.696 12.714 3.046 12.74 2.162C12.428 0.913999 11.128 0.419999 9.672 0.419999C8.19 0.419999 6.656 0.887999 5.278 2.214C4.082 3.384 3.276 5.1 3.016 8.064L0.78 8.324ZM24.3244 21.038V12.276L24.4024 8.116L24.1164 7.83L19.0984 8.558V9.234L20.9444 9.572L20.8924 18.828C19.9304 19.79 18.8384 20.362 17.6684 20.362C16.2384 20.362 15.4324 19.608 15.4324 17.32V12.276L15.5884 8.116L15.3024 7.83L10.1544 8.506V9.234L12.1044 9.598L12.0004 17.138C11.9484 21.038 13.5084 22.416 16.0044 22.416C17.9284 22.416 19.6704 21.272 20.9184 19.686L21.1004 22.286L26.0924 22V21.22L24.3244 21.038ZM32.2512 7.934L31.8872 7.7L26.8952 9.286V9.936L28.9492 10.144C29.0272 11.392 29.0532 12.328 29.0532 14.018V15.89C29.0532 17.32 29.0272 19.478 29.0012 20.96L27.1032 21.194V22H34.9292V21.194L32.5372 20.882C32.5112 19.4 32.4852 17.294 32.4852 15.89V13.576C33.0312 11.756 33.7332 10.612 34.8252 9.754L35.1112 10.066C35.7612 10.82 36.3072 11.314 37.1652 11.314C38.3872 11.314 38.8812 10.508 38.9592 9.338C38.6472 8.116 37.7112 7.674 36.6192 7.674C35.0592 7.674 33.3172 9.052 32.4852 11.548L32.2512 7.934ZM53.547 20.986C53.521 19.504 53.495 17.372 53.495 15.89V12.718C53.495 9.234 51.961 7.674 49.517 7.674C47.827 7.674 46.215 8.402 44.577 10.3L44.395 7.934L44.031 7.7L39.039 9.286V9.936L41.093 10.144C41.171 11.392 41.197 12.328 41.197 14.018V15.89C41.197 17.32 41.171 19.478 41.145 20.96L39.247 21.194V22H46.371V21.194L44.681 20.986C44.655 19.504 44.629 17.32 44.629 15.89V11.21C45.903 10.04 47.073 9.52 48.035 9.52C49.439 9.52 50.089 10.3 50.089 12.562V15.89C50.089 17.372 50.063 19.504 50.011 20.96L48.191 21.194V22H55.315V21.194L53.547 20.986ZM59.8037 4.788C60.9217 4.788 61.8577 3.982 61.8577 2.864C61.8577 1.694 60.9217 0.913999 59.8037 0.913999C58.6857 0.913999 57.7497 1.694 57.7497 2.864C57.7497 3.982 58.6857 4.788 59.8037 4.788ZM61.6497 20.986C61.6237 19.504 61.5977 17.32 61.5977 15.89V11.99L61.6497 7.934L61.2857 7.7L56.0077 9.182V9.884L58.1137 10.092C58.1657 11.392 58.1917 12.38 58.1917 14.044V15.89C58.1917 17.32 58.1657 19.478 58.1397 20.96L56.2417 21.194V22H63.3917V21.194L61.6497 20.986ZM67.8039 22.416C68.9999 22.416 69.9359 21.428 69.9359 20.284C69.9359 19.088 68.9999 18.1 67.8039 18.1C66.5819 18.1 65.6459 19.088 65.6459 20.284C65.6459 21.428 66.5819 22.416 67.8039 22.416ZM77.9472 13.238C75.9452 12.588 75.3732 11.886 75.3732 10.794C75.3732 9.52 76.3612 8.688 78.0772 8.688C78.8312 8.688 79.4292 8.844 80.0532 9.156L80.8592 11.964H82.1852L82.3672 8.844C80.9372 8.09 79.6632 7.674 77.9992 7.674C74.4372 7.674 72.4872 9.598 72.4872 12.094C72.4872 14.2 73.8652 15.448 76.1012 16.15L77.5312 16.618C79.5592 17.294 80.1572 18.022 80.1572 19.166C80.1572 20.596 79.0652 21.402 76.9852 21.402C76.1272 21.402 75.3992 21.272 74.7232 20.986L73.9952 17.84H72.4872L72.3832 21.22C73.8652 22 75.3212 22.416 77.1932 22.416C81.0152 22.416 83.1472 20.596 83.1472 17.944C83.1472 15.942 82.0292 14.564 79.2992 13.654L77.9472 13.238ZM98.2122 20.986C98.1862 19.504 98.1602 17.372 98.1602 15.89V12.77C98.1602 9.156 96.6522 7.674 94.1822 7.674C92.2842 7.674 90.7502 8.558 89.1902 10.352V5.074L89.2942 0.939998L88.9042 0.705998L83.7562 1.824V2.552L85.8622 2.708V15.89C85.8622 17.32 85.8362 19.478 85.8102 20.96L83.9122 21.194V22H90.9842V21.194L89.3202 20.986C89.2682 19.504 89.2422 17.32 89.2422 15.89V11.21C90.5162 10.04 91.6342 9.52 92.6742 9.52C94.0262 9.52 94.7802 10.3 94.7802 12.562V15.89C94.7802 17.372 94.7542 19.504 94.7282 20.96L92.8562 21.194V22H99.9802V21.194L98.2122 20.986ZM108.03 22.416C112.008 22.416 115.05 19.686 115.05 15.006C115.05 10.326 111.8 7.674 108.03 7.674C104.234 7.674 101.01 10.352 101.01 15.006C101.01 19.66 104 22.416 108.03 22.416ZM108.03 21.454C105.872 21.454 104.676 19.348 104.676 15.032C104.676 10.742 105.872 8.636 108.03 8.636C110.136 8.636 111.384 10.742 111.384 15.032C111.384 19.348 110.136 21.454 108.03 21.454ZM121.505 10.482C122.597 9.494 123.455 9.286 124.287 9.286C126.445 9.286 127.771 10.924 127.771 15.032C127.771 19.27 126.237 20.752 124.105 20.752C123.117 20.752 122.311 20.518 121.505 19.79V10.482ZM121.219 7.96L120.855 7.7L115.915 9.286V9.936L118.021 10.144C118.073 11.392 118.099 12.354 118.099 14.044V22.416C118.099 24.002 118.073 25.874 118.047 27.746L116.071 27.98V28.76H123.741V27.98L121.505 27.72C121.479 25.848 121.453 23.976 121.453 22.416V20.622C122.597 21.948 123.923 22.416 125.275 22.416C128.707 22.416 131.437 19.556 131.437 14.954C131.437 10.352 128.967 7.674 125.821 7.674C124.209 7.674 122.649 8.272 121.401 9.676L121.219 7.96Z"
+            fill="#244D4D" />
+        </svg>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">contact</a>
+          </li>
+        </ul>
+        <div class="icon">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog search_modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search here for find your dream furnitures</h5>
+        </div>
+        <div class="modal-body">
+          <input type="search" placeholder="Search here">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar part end -->
+
+
+
+
+
+
+
+
+
+
+  <!-- banner part start -->
+  <section id="banner">
+    <div class="container">
+      <div class="banner_txet">
+        <div class="row">
+          <div class="col-lg-5 col-12 col-sm-12 col-md-12">
+            <div class="b_texts">
+              <img src="images/banner_shape.png" class="img-fluid d-none d-lg-block" alt="">
+              <h1>We Help You
+                Make Modern
+                Interior</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore iste distinctio commodi quia
+                deserunt accusamus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-10 offset-lg-2 col-12 col-sm-12 col-md-12">
+          <div class="bnr_slider">
+            <div class="banner_img">
+              <img src="images/banner1.png" class="w-100 img-fluid" alt="">
+            </div>
+            <div class="banner_img">
+              <img src="images/banner_2.jpg" class="w-100 img-fluid" alt="">
+            </div>
+            <div class="banner_img">
+              <img src="images/banner3.jpg" class="w-100 img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="banner_number text-center d-none d-lg-block">
+        <p>01</p>
+        <p>।</p>
+        <p>06</p>
+      </div>
+
+      <div class="toptobottom_btn d-none d-lg-block">
+        <a href="#footer"><i class="fa-solid fa-down-long"></i></a>
+      </div>
+
+    </div>
+  </section>
+  <!-- banner part end -->
+
+
+
+
+  <!-- brand part start -->
+  <section id="brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="brand_head">
+            <h2>trusted by over 1K+ companies</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner_main_slider d-flex justify-content-between">
+
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand3.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand4.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand5.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="brand_img text-center">
+            <img src="images/brand3.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- brand part end -->
+
+
+  <!-- deal part start -->
+  <section id="deal">
+    <div class="container">
+      <div class="row deal_main align-items-center justify-content-center">
+        <div class="col-lg-4 col-12 col-sm-12 col-md-12">
+          <div class="deal_head">
+            <img src="images/deals_shape.png" class="img-fluid" alt="">
+            <h2>Hot</h2>
+            <h2>deals for you</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, molestiae?</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 col-sm-6 col-md-6">
+          <div class="deal_item">
+            <img src="images/deal_icon.png" class="img-fluid" alt="shape">
+            <h2>1.5% cashback</h2>
+            <p>Online shopping for retail sales direct to consumers</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 col-sm-6 col-md-6">
+          <div class="deal_item">
+            <img src="images/deal_icon.png" class="img-fluid" alt="shape">
+            <h2>30-Day terms</h2>
+            <p>Online shopping for retail sales direct to consumers</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 col-sm-6 col-md-6">
+          <div class="deal_item">
+            <img src="images/deal_icon.png" class="img-fluid" alt="shape">
+            <h2>Save money</h2>
+            <p>Online shopping for retail sales direct to consumers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- deal part end -->
+
+
+  <!-- about us part start -->
+  <section id="about">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4 col-12 col-sm-12 col-md-12">
+          <div class="about_head">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis odit architecto, illo vitae
+              facilis!</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 col-sm-12 col-md-12">
+          <div class="about_head_btn text-end">
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-md-6">
+          <div class="about_item">
+            <h2>1.</h2>
+            <h3>who we are</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, in.</p>
+          </div>
+          <div class="about_item">
+            <h2>3.</h2>
+            <h3>how do we help</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, in.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-6">
+          <div class="about_item">
+            <h2>2.</h2>
+            <h3>what do we do</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, in.</p>
+          </div>
+          <div class="about_item">
+            <h2>4.</h2>
+            <h3>creat sucess story</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, in.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 col-sm-6 col-md-6">
+          <div class="about_img_main for_animation1">
+            <img src="images/about1.png" class="w-100 img-fluid" alt="futniture">
+            <img src="images/about2.png" class="mt-3 w-100 img-fluid" alt="futniture">
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 col-sm-6 col-md-6">
+          <div class="about_img_main for_animation2">
+            <img src="images/about3.png" class="w-100 img-fluid" alt="futniture">
+            <img src="images/about4.png" class="mt-3 w-100 img-fluid" alt="futniture">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about us part end -->
+
+  <!-- product part start -->
+  <section id="product">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-6 col-sm-6 col-md-6">
+          <div class="product_head">
+            <h2>product</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 col-sm-6 col-md-6">
+          <div class="product_head_btn text-end">
+            <a href="#">See all <i class="fa-solid fa-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="product_item_btn">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">all</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">bed</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">sofa</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-chair-tab" data-bs-toggle="pill" data-bs-target="#pills-chair"
+                  type="button" role="tab" aria-controls="pills-chair" aria-selected="false">chair</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-light-tab" data-bs-toggle="pill" data-bs-target="#pills-light"
+                  type="button" role="tab" aria-controls="pills-light" aria-selected="false">light</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>hand base lamp</h2>
+                    <span class="counter">$35.00</span>
+                    <del>$55.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product1.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product2.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>lamp tool</h2>
+                    <span class="counter">$35.00</span>
+                    <del>$45.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product3.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stylish chair</h2>
+                    <span class="counter">$45.00</span>
+                    <del>$55.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product4.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stackable chair</h2>
+                    <span class="counter">$87.00</span>
+                    <del>$97.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product6.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stylish chair</h2>
+                    <span class="counter">$45.00</span>
+                    <del>$55.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product4.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stackable chair</h2>
+                    <span class="counter">$87.00</span>
+                    <del>$97.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product6.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product2.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>hand base lamp</h2>
+                    <span class="counter">$35.00</span>
+                    <del>$55.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product1.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-chair" role="tabpanel" aria-labelledby="pills-chair-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>lamp tool</h2>
+                    <span class="counter">$35.00</span>
+                    <del>$45.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product3.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stackable chair</h2>
+                    <span class="counter">$87.00</span>
+                    <del>$97.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product6.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-light" role="tabpanel" aria-labelledby="pills-light-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product2.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>lamp tool</h2>
+                    <span class="counter">$35.00</span>
+                    <del>$45.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product3.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>stylish chair</h2>
+                    <span class="counter">$45.00</span>
+                    <del>$55.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product4.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                  <div class="product_item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="product_item_text">
+                      <h2>vintage chair</h2>
+                    <span class="counter">$65.00</span>
+                    <del>$95.00</del>
+                    </div>
+                    <div class="product_item_img">
+                      <img src="images/product5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- product part end -->
+
+
+  <!-- clients part start -->
+  <section id="client">
+    <div class="container client_bg">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-12 col-sm-12 col-md-12">
+          <div class="client_head text-center">
+            <h2>What our happy
+              client say</h2>
+              <p>File storage made easy - including powerfull features you wont't find anywhere else,  Whether you're.</p>
+              <img src="images/client_shape_1.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="client_slider_main">
+        <div class="client_slider">
+          <div class="row justify-content-center">
+            <div class="col-lg-3">
+              <div class="client_slider_img">
+                <img src="images/client.png" class="w-100 img-fluid" alt="man">
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
+              <div class="client_slider_text">
+                <h2>furni.shop</h2>
+                <p>File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.</p>
+                <h3>Larry Diamond</h3>
+                <h4>Chief Executive Officer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client_slider">
+          <div class="row justify-content-center">
+            <div class="col-lg-3">
+              <div class="client_slider_img">
+                <img src="images/client.png" class="w-100 img-fluid" alt="man">
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
+              <div class="client_slider_text">
+                <h2>furni.shop</h2>
+                <p>File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.</p>
+                <h3>Kuddos Hayder</h3>
+                <h4>Chief Executive Officer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client_slider">
+          <div class="row justify-content-center">
+            <div class="col-lg-3">
+              <div class="client_slider_img">
+                <img src="images/client.png" class="w-100 img-fluid" alt="man">
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
+              <div class="client_slider_text">
+                <h2>furni.shop</h2>
+                <p>File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.</p>
+                <h3>Niton Chondro Pal</h3>
+                <h4>Chief Executive Officer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="images/client_shape_2.png" class="shape1" alt="">
+      <img src="images/client_shape_3.png" class="shape2" alt="">
+    </div>
+  </section>
+  <!-- clients part end -->
+
+
+  <!-- footer start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12 col-sm-12 col-md-12">
+          <div class="footer_head">
+            <h2>Start your business today for $0+ state fees.</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 col-sm-12 col-md-12">
+          <div class="footer_head_btn text-end">
+            <a href="#">get started</a>
+            <a href="#">contact sales</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_footer">
+        <div class="row">
+          <div class="col-lg-3 col-12 col-sm-12 col-md-12">
+            <div class="footer_one">
+              <img src="images/footer_logo.png" alt="logo">
+              <p>Optix seamlessly connects your members with the community, resources.</p>
+              <div class="footer_social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 col-sm-3 col-md-3">
+            <div class="footer_list">
+              <h2>Entity types</h2>
+              <ul>
+                <li><a href="#">knowledge base</a></li>
+                <li><a href="#">security</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-3 col-md-3">
+            <div class="footer_list">
+              <h2>Services</h2>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">press</a></li>
+                <li><a href="#">payrool</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">library</a></li>
+                <li><a href="#">help center</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-3 col-md-3">
+            <div class="footer_list">
+              <h2>resources</h2>
+              <ul>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">contact support</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">terms</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-3 col-md-3">
+            <div class="footer_list">
+              <h2>support</h2>
+              <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">affiliates</a></li>
+                <li><a href="#">sitemap</a></li>
+                <li><a href="#">cancelation policy</a></li>
+                <li><a href="#">pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript links here -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

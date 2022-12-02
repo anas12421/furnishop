@@ -1,0 +1,57 @@
+#deal {
+  padding-top: 138px;
+  padding-bottom: 100px;
+}
+
+.deal_main{
+  justify-content: space-between;
+}
+
+.deal_head {
+  position: relative;
+}
+
+.deal_head img {
+  position: absolute;
+  top: -5%;
+  left: 25%;
+}
+
+.deal_head h2 {
+  font-family: 'Noto Serif JP' , sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #244D4D;
+}
+
+.deal_head p {
+  padding-right: 100px;
+  padding-top: 6px;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #0E0E13;
+}
+
+.deal_item h2 {
+  padding-top: 23px;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #3D3D3F;
+
+}
+
+.deal_item p {
+  padding-top: 6px;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #0E0E13;
+
+}
